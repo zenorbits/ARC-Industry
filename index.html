@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arc Reactor Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>ARC REACTOR ENERGY DISTRIBUTION PANEL</h1>
+
+<div class="energy">
+Total Energy: 100 Units
+<br>
+Remaining Energy: <span id="remaining">100</span>
+</div>
+
+<div class="systems">
+
+<div class="system">
+<h3>Propulsion</h3>
+<button onclick="changeEnergy('prop',-5)">-</button>
+<span id="prop">0</span>
+<button onclick="changeEnergy('prop',5)">+</button>
+<p id="propStatus">Efficiency: Low</p>
+</div>
+
+<div class="system">
+<h3>Defense</h3>
+<button onclick="changeEnergy('def',-5)">-</button>
+<span id="def">0</span>
+<button onclick="changeEnergy('def',5)">+</button>
+<p id="defStatus">Efficiency: Low</p>
+</div>
+
+<div class="system">
+<h3>Navigation</h3>
+<button onclick="changeEnergy('nav',-5)">-</button>
+<span id="nav">0</span>
+<button onclick="changeEnergy('nav',5)">+</button>
+<p id="navStatus">Efficiency: Low</p>
+</div>
+
+<div class="system">
+<h3>Communication</h3>
+<button onclick="changeEnergy('com',-5)">-</button>
+<span id="com">0</span>
+<button onclick="changeEnergy('com',5)">+</button>
+<p id="comStatus">Efficiency: Low</p>
+</div>
+
+</div>
+
+<p id="warning">System Stable</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
